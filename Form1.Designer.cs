@@ -28,34 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblOutDate = new System.Windows.Forms.Label();
+            this.lblOutPrecipitation = new System.Windows.Forms.Label();
+            this.lblOutHighTemp = new System.Windows.Forms.Label();
+            this.lblOutLowTemp = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
-            // 
-            // listBox1
-            // 
-            this.listBox1.Font = new System.Drawing.Font("Arsenal", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 26;
-            this.listBox1.Location = new System.Drawing.Point(12, 42);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(293, 394);
-            this.listBox1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arsenal", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(317, 42);
+            this.label1.Location = new System.Drawing.Point(7, 99);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 26);
             this.label1.TabIndex = 1;
@@ -65,7 +55,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arsenal", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(317, 90);
+            this.label2.Location = new System.Drawing.Point(7, 147);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 26);
             this.label2.TabIndex = 2;
@@ -75,7 +65,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arsenal", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(317, 142);
+            this.label3.Location = new System.Drawing.Point(7, 199);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 26);
             this.label3.TabIndex = 3;
@@ -85,92 +75,99 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arsenal", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(317, 190);
+            this.label4.Location = new System.Drawing.Point(7, 247);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 26);
             this.label4.TabIndex = 4;
             this.label4.Text = "Low Temp:";
             // 
-            // label5
+            // lblOutDate
             // 
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label5.Font = new System.Drawing.Font("Arsenal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(455, 42);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(333, 42);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "label5";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblOutDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblOutDate.Font = new System.Drawing.Font("Arsenal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOutDate.Location = new System.Drawing.Point(152, 99);
+            this.lblOutDate.Name = "lblOutDate";
+            this.lblOutDate.Size = new System.Drawing.Size(634, 42);
+            this.lblOutDate.TabIndex = 5;
+            this.lblOutDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label6
+            // lblOutPrecipitation
             // 
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label6.Font = new System.Drawing.Font("Arsenal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(454, 90);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(333, 42);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "label6";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblOutPrecipitation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblOutPrecipitation.Font = new System.Drawing.Font("Arsenal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOutPrecipitation.Location = new System.Drawing.Point(152, 147);
+            this.lblOutPrecipitation.Name = "lblOutPrecipitation";
+            this.lblOutPrecipitation.Size = new System.Drawing.Size(634, 42);
+            this.lblOutPrecipitation.TabIndex = 6;
+            this.lblOutPrecipitation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label7
+            // lblOutHighTemp
             // 
-            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label7.Font = new System.Drawing.Font("Arsenal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(456, 142);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(333, 42);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "label7";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblOutHighTemp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblOutHighTemp.Font = new System.Drawing.Font("Arsenal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOutHighTemp.Location = new System.Drawing.Point(152, 199);
+            this.lblOutHighTemp.Name = "lblOutHighTemp";
+            this.lblOutHighTemp.Size = new System.Drawing.Size(634, 42);
+            this.lblOutHighTemp.TabIndex = 7;
+            this.lblOutHighTemp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label8
+            // lblOutLowTemp
             // 
-            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label8.Font = new System.Drawing.Font("Arsenal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(456, 190);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(333, 42);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "label8";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblOutLowTemp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblOutLowTemp.Font = new System.Drawing.Font("Arsenal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOutLowTemp.Location = new System.Drawing.Point(152, 247);
+            this.lblOutLowTemp.Name = "lblOutLowTemp";
+            this.lblOutLowTemp.Size = new System.Drawing.Size(634, 42);
+            this.lblOutLowTemp.TabIndex = 8;
+            this.lblOutLowTemp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Arsenal", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(13, 13);
+            this.label9.Location = new System.Drawing.Point(7, 9);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(115, 26);
             this.label9.TabIndex = 9;
             this.label9.Text = "Select a Date:";
             // 
-            // button1
+            // btnExit
             // 
-            this.button1.Font = new System.Drawing.Font("Arsenal", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(627, 399);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(159, 39);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Exit";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnExit.Font = new System.Drawing.Font("Arsenal", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(12, 315);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(159, 39);
+            this.btnExit.TabIndex = 10;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Arsenal", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(12, 42);
+            this.dateTimePicker1.MaxDate = new System.DateTime(2018, 1, 31, 0, 0, 0, 0);
+            this.dateTimePicker1.MinDate = new System.DateTime(2018, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(774, 31);
+            this.dateTimePicker1.TabIndex = 11;
+            this.dateTimePicker1.Value = new System.DateTime(2018, 1, 1, 0, 0, 0, 0);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(800, 387);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblOutLowTemp);
+            this.Controls.Add(this.lblOutHighTemp);
+            this.Controls.Add(this.lblOutPrecipitation);
+            this.Controls.Add(this.lblOutDate);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.listBox1);
             this.Name = "Form1";
             this.Text = "Weather Data";
             this.ResumeLayout(false);
@@ -179,18 +176,17 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblOutDate;
+        private System.Windows.Forms.Label lblOutPrecipitation;
+        private System.Windows.Forms.Label lblOutHighTemp;
+        private System.Windows.Forms.Label lblOutLowTemp;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
 
