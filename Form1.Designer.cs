@@ -140,6 +140,7 @@
             this.btnExit.TabIndex = 10;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // dateTimePicker1
             // 
@@ -151,6 +152,7 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(774, 31);
             this.dateTimePicker1.TabIndex = 11;
             this.dateTimePicker1.Value = new System.DateTime(2018, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // Form1
             // 
